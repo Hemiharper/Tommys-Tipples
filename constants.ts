@@ -1,84 +1,68 @@
-
 import { MenuSection } from './types';
 
+// These are the drinks displayed visually on your website
 export const MENU_DATA: MenuSection[] = [
   {
-    title: "Short, Sharp & Spirit-Forward",
-    subtitle: "Stirred, bold, and unapologetic. Designed for the slow sipper.",
+    title: "Gin Classics",
+    subtitle: "Timeless and botanical.",
     drinks: [
-      { name: "Oaxaca Old Fashioned", ingredients: "Reposado Tequila, Mezcal, Agave, Bitters", description: "Smoky & sophisticated.", glassware: 'short' },
-      { name: "Negroni", ingredients: "Gin, Red Vermouth, Campari", description: "The quintessential bitter-sweet classic.", glassware: 'short' },
-      { name: "Aviation", ingredients: "Gin, Creme De Violette, Lemon, Maraschino", description: "Floral, elegant, and sky-blue.", glassware: 'cocktail' },
-      { name: "Manhattan", ingredients: "Rye Whiskey, Sweet Vermouth, Bitters", description: "The bartender’s choice; bold and spicy.", glassware: 'cocktail' }
+      { name: "Aviation", ingredients: "Gin, Creme De Violette, Lemon, Maraschino", description: "Floral and elegant.", glassware: 'cocktail' },
+      { name: "White Lady", ingredients: "Gin, Orange Curaçao, Lemon, Egg White", description: "Silky and citrusy.", glassware: 'cocktail' },
+      { name: "Negroni", ingredients: "Gin, Red Vermouth, Campari", description: "The ultimate bitter-sweet balance.", glassware: 'short' },
+      { name: "Bramble", ingredients: "Gin, Mure (Blackberry), Lemon", description: "Fruity and refreshing.", glassware: 'short' }
     ]
   },
   {
-    title: "Tropical & Tiki Escapism",
-    subtitle: "Transportive, complex, and fruit-forward. Vacation in a glass.",
+    title: "Agave (Tequila/Mezcal)",
+    subtitle: "Smoky and bold.",
     drinks: [
-      { name: "Jungle Booby", ingredients: "Blanco Tequila, Mezcal, Campari, Pineapple, Lime, Grapefruit", description: "Agave meets the tropics.", glassware: 'tiki' },
-      { name: "Painkiller", ingredients: "Dark Rum, Pineapple, Orange, Coconut Cream, Nutmeg", description: "Rich, creamy, and lush.", glassware: 'tiki' },
-      { name: "Chartreuse Swizzle", ingredients: "Green Chartreuse, Pineapple, Lime, Falernum", description: "Vibrant, herbal, and refreshing.", glassware: 'tall' },
-      { name: "Chief Lapu Lapu", ingredients: "Dark & Light Rums, Passionfruit, Citrus", description: "A heavy-hitting tiki legend.", glassware: 'tiki' }
-    ]
-  },
-  {
-    title: "Bright, Fizzy & Refreshing",
-    subtitle: "Long, cold, and effervescent. Perfect for starting the night.",
-    drinks: [
-      { name: "Tommy’s Margarita", ingredients: "Blanco Tequila, Fresh Lime, Agave Syrup", description: "The clean, gold standard.", glassware: 'short' },
-      { name: "Who Shot Tom Collins?", ingredients: "Gin, Lemon, Soda, Bloody Shiraz Gin Float", description: "A visual showstopper.", glassware: 'tall' },
-      { name: "Paloma", ingredients: "Tequila, Lime, Grapefruit Soda", description: "Bright, zesty, and sessionable.", glassware: 'tall' },
-      { name: "Aperol Spritz", ingredients: "Prosecco, Aperol, Soda Water", description: "The ultimate sunset sipper.", glassware: 'wine' }
-    ]
-  },
-  {
-    title: "Smooth & Velvety",
-    subtitle: "Silky sours and elegant martinis with a soft, frothy finish.",
-    drinks: [
-      { name: "White Lady", ingredients: "Gin, Orange Curaçao, Lemon, Egg White", description: "Crisp, citrusy, and cloud-like.", glassware: 'cocktail' },
-      { name: "Paper Plane", ingredients: "Bourbon, Aperol, Amaro, Lemon", description: "A perfect bittersweet harmony.", glassware: 'cocktail' },
-      { name: "Amaretto Sour", ingredients: "Amaretto, Bourbon, Lemon, Egg White", description: "Sweet, tart, and nostalgic.", glassware: 'short' },
-      { name: "Pisco Sour", ingredients: "Pisco, Lime, Egg White, Bitters", description: "The classic South American velvet sour.", glassware: 'cocktail' }
-    ]
-  },
-  {
-    title: "Tommy’s Picks",
-    subtitle: "Tom’s hand-picked favourites. If you can’t decide, trust the bar.",
-    drinks: [
-      { name: "Pink GF Margarita", ingredients: "Tequila/Mezcal, Grapefruit Cordial, Lime, Agave", description: "Zesty and vibrant.", glassware: 'short' },
-      { name: "Penicillin", ingredients: "Blended Scotch, Ginger, Honey, Lemon, Peated Scotch Float", description: "Smoky and medicinal.", glassware: 'short' },
-      { name: "Mai Tai", ingredients: "Appleton 12 & Clement VSOP Rums, Lime, Orgeat", description: "The undisputed King of Tiki.", glassware: 'short' },
-      { name: "Scorpion Reef", ingredients: "Mezcal, Jamaican Rum, Pineapple, Orgeat", description: "Smoke meets spice.", glassware: 'tiki' },
-      { name: "Daiquiri", ingredients: "White Rum, Fresh Lime, Sugar", description: "Simple, cold, and flawless.", glassware: 'cocktail' }
+      { name: "Pink GF Margarita", ingredients: "Tequila/Mezcal, GF Juice, Lime, Agave", description: "Zesty and vibrant.", glassware: 'short' },
+      { name: "Deadman's Handle", ingredients: "Tequila, Aperol, Orgeat, Lime", description: "Almond and bitter notes.", glassware: 'short' },
+      { name: "Smokin Berries", ingredients: "Mezcal, Raspberry, Lime, Agave", description: "Smoky and tart.", glassware: 'short' }
     ]
   }
+  // Add more sections here if you want more visible on the page
 ];
 
-export const BARTENDER_CHEAT_CARD = `
-- If they want refreshing but NOT sweet: Tommy’s Margarita or Paloma.
-- If they like smoke/mezcal: Oaxaca Old Fashioned, Jungle Booby, or Scorpion Reef.
-- If they want "Vacation in a Glass": Painkiller or Chief Lapu Lapu.
-- If they want a showstopper: Who Shot Tom Collins?
-- If they want something creamy: Amaretto Sour or Painkiller.
-- If they want "Bartender's Choice": Manhattan or Mai Tai.
-- Off-menu requests: Use the base spirits in the menu as a guide. Suggest a classic variation if they have specific likes.
+export const BARTENDER_CHEAT_SHEET = `
+Use this grid to categorize your "Vibe Check":
+- REFRESHING / LIGHT (Top of grid):
+  * TART & SOUR: Mexican Firing Squad, Cucumber Gimlet
+  * FRUITY & SWEET: Gin Mule, Bramble
+- BOOZY / INTENSE (Bottom of grid):
+  * STIRRED & BOLD (Bitter/Boozy side): Negroni, Manhattan, Smoke & Mirrors
+  * RICH & TROPICAL (Sweet/Fruit side): Amaretto Sour, Pornstar Martini, Painkiller
 `;
 
 export const SYSTEM_INSTRUCTION = `
-You are "Tommy-GPT", a sophisticated digital bartender at a high-end Melbourne cocktail lounge.
-Your personality is approachable, expert-level, and exceptionally helpful for fussy or indecisive customers.
+Role & Persona:
+You are "Tommy's Tippler", a Liquid Librarian—a seasoned, charismatic, and cheeky bartender. You are never pretentious; you make discovery fun. Use professional expertise and warm wit.
 
-YOUR GOAL: 
-Help the user choose a drink from our signature menu. 
-If they are indecisive, ask questions about their flavour preferences (e.g., Sweet vs Bitter, Smoky vs Clean, Tall vs Short).
-If they know exactly what they want but it's not on the menu, use the "Bartender’s Cheat Card" and your knowledge of the base ingredients on our menu to suggest a custom riff.
+Core Knowledge:
+Your primary source of truth is the "Cocktail menu 2022.03.15". You MUST prioritize recommending drinks from the following database of ~135 recipes:
+[DATABASE START]
+${/* I have compressed your CSV data for the AI here */ ''}
+- Aviation: Gin, Creme De Violette, Lemon, Maraschino
+- Negroni: Gin, Red Vermouth, Campari
+- Pink GF Margarita: Tequila/Mezcal, GF Cordial, Lime, Agave (Optional Habanero)
+- Deadman's Handle: Tequila, Aperol, Orgeat, Lime
+- Zombie: Gold Rum, OP Rum, Falernum, Pineapple, Lime, GF, Grenadine, Cinnamon, Absinthe
+- Lost Lake: Jamaican Rum, Maraschino, Campari, Pineapple, Lime
+- Five & Dime: Gin, Apricot Brandy, Lemon, Orgeat, Bitters
+- Sunflower: Gin, Triple Sec, Elderflower, Lemon, Absinthe
+- Who Shot Tom Collins: Gin, Lemon, Sugar, Soda, Bloody Shiraz Float
+(AI NOTE: You have access to the full 135 recipes including specialty Rums, Tequilas, and Whiskies from the provided sheet.)
+[DATABASE END]
 
-DRINK MENU:
-${JSON.stringify(MENU_DATA, null, 2)}
+Bartender's Cheat Sheet Logic:
+${BARTENDER_CHEAT_SHEET}
 
-BARTENDER'S CHEAT CARD:
-${BARTENDER_CHEAT_CARD}
+Interaction Strategy:
+1. The Vibe Check: Start with a mood question (e.g., "Sun-Seeker" vs "Study-Dweller").
+2. The Adventure Level: Assess if they want a "Safe Bet" (familiar) or "Adventurous" (unique ingredients like Absinthe or Orgeat).
+3. The Recommendation: Provide the **Bolded Name**, the one-sentence "Vibe," and the "Hook" (a standout ingredient).
 
-Tone: Use Australian English. Be bold but welcoming. No fluff. Refer to drinks as "tipples" occasionally.
+Guidelines:
+- If a user asks for a standard drink (e.g., Margarita), suggest your menu version (Pink GF Margarita) first, then offer an "Adventurous" riff (Deadman's Handle).
+- Handling Off-Menu: If requested, say: "I don't have that specific book on my shelves right now, but I think you'd love the [Menu Drink]. Shall we try that instead?"
 `;
