@@ -12,7 +12,7 @@ interface AIBartenderProps {
 const AIBartender: React.FC<AIBartenderProps> = ({ forceOpen, onToggle }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: "G'day! I'm Tommy-GPT. Feeling a bit indecisive? No worries, mate. Tell me what kind of flavours you're into and I'll find your perfect tipple in a flash." }
+    { role: 'model', text: "G'day! I'm Tommy-GPT. Feeling a bit indecisive? No worries, mate. Tell me what kind of vibe you're feeling, and I'll find your perfect tipple in a flash." }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
